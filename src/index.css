@@ -1,5 +1,359 @@
 html,
 body,
 #root {
-  min-height: 100%;
+  --test-primary-bg: #37384b;
+  --test-secondary-bg: #303141;
+  --test-tertiary-bg: #fff;
+  --test-primary-text: #fff;
+  --test-primary-border-color: #4c6085;
+  --test-primary-product-card: #323648;
+  --test-primary-font-size: 15px;
+  --test-secondary-font-size: 10px;
+  --test-primary-border-radius: 5px;
+  --test-secondary-border-radius: 3px;
+
+  font-family: Roboto, sans-serif;
+  /* min-height: 100%; */
+  width: 100%;
+  font-size: var(--test-primary-font-size);
 }
+
+body {
+  overflow-y: scroll;
+  background-color: var(--test-primary-bg);
+  color: var(--test-primary-text);
+  background-image: url('https://chicksgold.com/backgrounds/currency/default.jpg');
+  background-repeat: no-repeat;
+}
+
+/** utilities **/
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.test-justify-content-between {
+  justify-content: space-between;
+}
+
+.test-justify-content-start {
+  justify-content: start;
+}
+
+.test-align-items-center {
+  align-items: center;
+}
+
+.test-visibility-hidden {
+  visibility: hidden;
+}
+
+/** end utilities **/
+
+/****/
+.test-material-select,
+.test-material-input,
+.test-material-select-with-label {
+  border-radius: var(--test-secondary-border-radius);
+  background-color: rgba(76, 96, 133, 0.2);
+}
+
+.test-material-select img,
+.test-material-select-with-label img {
+  width: 20px;
+  /* background-color: rgba(76, 96, 133, 0.2); */
+}
+
+.test-material-select select,
+.test-material-select-with-label select,
+.test-material-input input {
+  border-radius: var(--test-secondary-border-radius);
+  border: 1px solid transparent;
+  color: var(--test-primary-text);
+  background-color: rgba(76, 96, 133, 0);
+  font-size: var(--test-primary-font-size);
+
+}
+
+.test-material-select select,
+.test-material-select-with-label select {
+  background-image: url('https://chicksgold.com/icons/arrow-white.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+  /* adjust the padding value to position the text */
+  -webkit-appearance: none;
+  /* hide the default arrow icon in Safari */
+  -moz-appearance: none;
+  /* hide the default arrow icon in Firefox*/
+  appearance: none;
+}
+
+.test-material-select-with-label {
+  font-size: var(--test-secondary-font-size);
+}
+
+.test-material-select select:focus,
+.test-material-input input:focus,
+.test-material-select-with-label select:focus {
+  border: 0px solid transparent !important;
+  box-shadow: none !important;
+  background-color: rgba(76, 96, 133, 0);
+  color: var(--test-primary-text);
+
+}
+
+/**Navbar**/
+.navbar {
+  background-color: var(--test-secondary-bg);
+  min-height: 75px;
+  color: var(--test-primary-text);
+  border-bottom: 1px solid var(--test-primary-border-color);
+}
+
+.navbar .nav-link {
+  color: var(--test-primary-text);
+
+}
+
+.navbar .navbar-brand {
+  border-right: 1px solid #fff;
+}
+
+.navbar .navbar-brand img {
+  min-width: 150px;
+}
+
+.chicks-signin-btn {
+  background-color: #39e29d;
+  color: #000;
+  border: 1px solid #39e29d;
+}
+
+/** end navbar**/
+
+/** main container **/
+
+.test-main-container {
+  margin-top: 115px;
+  margin-bottom: 100px;
+
+}
+
+.test-main-content {
+  background-color: var(--test-secondary-bg);
+  border: 1px solid var(--test-primary-border-color);
+  box-shadow: 3px 3px var(--test-secondary-bg);
+}
+
+/** product card **/
+.test-product-card {
+  background-color: var(--test-primary-product-card);
+  height: 100%;
+  padding: 20px;
+  border-radius: var(--test-primary-border-radius);
+}
+
+.test-product-card .test-product-card-row {
+  display: flex;
+  flex: 1 1 auto;
+  margin-bottom: 10px;
+}
+
+.test-product-card-on-sale {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  font-size: var(--test-secondary-font-size);
+  flex: 0 1 auto;
+}
+
+.test-product-card-on-sale-dot {
+  border-radius: 100%;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  background-color: #39e29d;
+}
+
+.test-product-card-on-sale-paragraph {
+  margin-bottom: 0;
+}
+
+.test-product-card-on-sale-availability {
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #39e29d;
+  border-radius: var(--test-secondary-border-radius);
+  color: #39e29d;
+  width: 60px;
+}
+
+.test-product-card-on-sale-availability-text {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: var(--test-secondary-font-size);
+}
+
+.test-product-card-on-sale-qty {
+  height: 40px;
+  width: 65px;
+  border: 0;
+  padding-left: 8px;
+  padding-right: 2px;
+  margin: 0;
+  background-color: #373e54;
+  color: var(--test-primary-text);
+}
+
+.test-product-card-on-sale-qty:focus {
+  outline: none;
+}
+
+.test-product-card-product-name {
+  margin-bottom: 0;
+}
+
+.test-product-card-product-image {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.test-product-card-product-game-image>img {
+  max-height: 20px;
+  max-width: 35px;
+  border-radius: 40px;
+  border: 1px solid #39e29d;
+}
+
+.test-product-card-product-price {
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.test-product-card-product-old-price {
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+  margin-bottom: 0px;
+}
+
+.test-product-card-product-description {
+  font-size: var(--test-secondary-font-size);
+  color: #9d9fa8;
+  margin-bottom: 0px;
+}
+
+.test-product-card-row .test-product-card-product-details-btn,
+.test-product-card-row .test-product-card-product-add-btn {
+  flex: 1 1 auto;
+  height: 45px;
+}
+
+.test-product-card-product-details-btn,
+.test-product-card-product-add-btn {
+  border-color: transparent;
+  border-radius: var(--test-secondary-border-radius);
+  padding: 2px;
+}
+
+.test-product-card-product-details-btn {
+  background-color: #3f4254;
+  color: #90929c;
+  margin-right: 4px;
+}
+
+.test-product-card-product-details-btn-text {
+  margin-bottom: 0;
+}
+
+.test-product-card-product-add-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #5762d5;
+  margin-left: 4px;
+  color: var(--test-primary-text);
+}
+
+.test-product-card-product-add-btn-text {
+  margin-bottom: 0;
+  width: 48%;
+}
+
+.test-product-card-product-add-btn-icon {
+  background-color: #454da8;
+  width: 48%;
+  padding: 4px 4px;
+  border-radius: var(--test-secondary-border-radius);
+  color: var(--test-primary-text);
+}
+
+/** end product card **/
+
+/** payment methods **/
+.test-payment-methods {
+  background-color: #2b2c3b;
+  padding: 30px 0;
+}
+
+.test-payment-method-img {
+  max-width: 90px;
+}
+
+/** end payment methods **/
+
+/** footer **/
+.test-footer {
+  background-color: var(--test-secondary-bg);
+}
+
+.test-social-networks {
+  border-bottom: 2px solid var(--test-primary-border-color);
+}
+
+.test-social-network {
+  width: 40px;
+}
+
+.test-logo-footer {
+  width: 200px;
+}
+
+.test-contact-email-footer a,
+.test-footer-link a,
+.test-footer-trustpilot a, 
+.test-footer-copyright {
+  color: var(--test-primary-text);
+  font-size: var(--test-secondary-font-size);
+  text-decoration: none;
+}
+
+.test-footer-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.test-footer-link,
+.test-footer-trustpilot p {
+  color: #7e7f8a;
+  margin-bottom: 10px;
+  /* font-size: 20px;
+  font-weight: 800; */
+}
+
+.test-footer-trustpilot-start-wrapper {
+  /* background-color: #00b67a; */
+  width: 25px;
+}
+
+.test-footer-trustpilot-start-wrapper img {
+  background-color: #00b67a;
+  margin: auto auto;
+}
+
+/** end footer **/
