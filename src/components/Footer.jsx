@@ -117,30 +117,36 @@ export default function Footer() {
                 </p>
               </Col>
               <Col className="pt-4 test-footer-trustpilot">
-                <a className="d-flex justify-content-around test-footer-trustpilot-text p-1">
-                  <div className="d-flex test-footer-trustpilot-start-wrapper">
-                    <img
-                      className="ms-1"
-                      src="https://chicksgold.com/home/star_full.svg"
-                    />
-                    <img
-                      className="ms-1"
-                      src="https://chicksgold.com/home/star_full.svg"
-                    />
-                    <img
-                      className="ms-1"
-                      src="https://chicksgold.com/home/star_full.svg"
-                    />
-                    <img
-                      className="ms-1"
-                      src="https://chicksgold.com/home/star_full.svg"
-                    />
-                    <img
-                      className="ms-1"
-                      src="https://chicksgold.com/home/star_full.svg"
-                    />
-                  </div>
-                  <p className="ms-1 mb-0">Truspilot Reviews</p>
+                <a className="w-100 d-flex justify-content-around test-footer-trustpilot-text p-1">
+                  <Row  className="w-100">
+                    <Col>
+                      <div className="d-flex test-footer-trustpilot-start-wrapper">
+                        <img
+                          className="ms-1"
+                          src="https://chicksgold.com/home/star_full.svg"
+                        />
+                        <img
+                          className="ms-1"
+                          src="https://chicksgold.com/home/star_full.svg"
+                        />
+                        <img
+                          className="ms-1"
+                          src="https://chicksgold.com/home/star_full.svg"
+                        />
+                        <img
+                          className="ms-1"
+                          src="https://chicksgold.com/home/star_full.svg"
+                        />
+                        <img
+                          className="ms-1"
+                          src="https://chicksgold.com/home/star_full.svg"
+                        />
+                      </div>
+                    </Col>
+                    <Col>
+                      <p className="ms-1 mb-0">Truspilot Reviews</p>
+                    </Col>
+                  </Row>
                 </a>{" "}
               </Col>
             </Row>
