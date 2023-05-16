@@ -11,7 +11,9 @@ export default function NavigationBar() {
             src="https://chicksgold.com/logo/chicks-logo-large.svg"
           />
         </Navbar.Brand>
-        <Nav className="me-auto">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="test-navbar">
+        <Nav id="test-navbar" className="me-auto">
           <NavDropdown className="px-4 py-2" title="CURRENCY"></NavDropdown>
           <NavDropdown className="px-4 py-2" title="ITEMS"></NavDropdown>
           <NavDropdown className="px-4 py-2" title="ACCOUNTS"></NavDropdown>
@@ -19,11 +21,19 @@ export default function NavigationBar() {
           <NavDropdown className="px-4 py-2" title="SWAP"></NavDropdown>
           <NavDropdown className="px-4 py-2" title="SELL"></NavDropdown>
         </Nav>
-        <Nav className="ms-auto">
-          <NavDropdown className="px-4 py-2" title="USD"></NavDropdown>
-          <Nav.Item>
-            <Button size="lg" className="chicks-signin-btn">
-              <span className="me-1">Sign in</span>
+        </Navbar.Collapse>
+        <Nav className="me-auto justify-content-end">
+          <NavDropdown className="d-flex align-items-center  justify-content-center px-4 py-2 mx-1" title="USD"></NavDropdown>
+          <Nav.Item className="d-flex px-4 py-2 mx-1 justify-content-md-center justify-content-lg-between align-items-center">
+            <img
+              className="test-navbar-cart-icon me-1"
+              src="https://chicksgold.com/icons/cart.svg"
+            />
+            <p className="ms-1 mb-0">CART (5)</p>
+          </Nav.Item>
+          <Nav.Item className="px-4 py-2 mx-1">
+            <Button size="lg" className="h-100 test-signin-btn">
+              <span className="mx-1">SIGN IN</span>
               <img
                 className="ms-1"
                 src="https://chicksgold.com/sign-in/profile.png"

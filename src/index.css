@@ -126,11 +126,15 @@ body {
 .navbar .navbar-brand img {
   min-width: 150px;
 }
-
-.chicks-signin-btn {
+.test-navbar-cart-icon{
+  max-width: 20px;
+}
+.test-signin-btn {
   background-color: #39e29d;
   color: #000;
-  border: 1px solid #39e29d;
+  border: none;
+  font-size: var(--test-primary-font-size);
+  border-radius: var(--test-primary-border-radius);
 }
 
 /** end navbar**/
@@ -294,6 +298,26 @@ body {
 }
 
 /** end product card **/
+
+/** pagination **/
+.test-pagination a{
+  background-color:  var(--test-secondary-bg);
+  color: var(--test-primary-text);
+  border: none;
+  font-size: var(--test-primary-font-size);
+}
+
+.test-pagination .active .page-link{
+  background-color:  #454da8;
+  border: none;
+  border-radius: var(--test-primary-border-radius);
+}
+
+.test-pagination-next, .test-pagination-prev{
+  border-radius: var(--test-primary-border-radius);
+  border: 1px solid #454da8;
+}
+/** end pagination **/
 
 /** payment methods **/
 .test-payment-methods {
